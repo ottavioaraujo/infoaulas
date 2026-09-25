@@ -8,6 +8,7 @@ while True:
  print("--- BEM-VINDO AO CAÇA AO TESOURO ---")
  print("O mapa é uma grade 3x3 (Linhas de 0 a 2 e Colunas de 0 a 2).")
 
+
  linha = int(input("Digite a Linha (0 a 2): "))
  coluna = int(input("Digite a Coluna (0 a 2): "))
 
