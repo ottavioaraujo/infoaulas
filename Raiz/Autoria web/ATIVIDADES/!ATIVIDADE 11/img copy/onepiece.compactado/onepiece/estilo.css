@@ -1,0 +1,83 @@
+*{
+    font-family: "arial";
+}
+
+h1, p{
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background-color:black;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 150px;
+}
+
+
+#tony{
+    background-image: url(./img/personagem-tony-chopper.png);
+}
+
+#nami{
+    background-image: url("./img/personagem-nami.png");
+    background-size: cover;
+}
+
+#luffy{
+    background-image: url("./img/personagem-monkey-d-luffy.png");
+    background-size: cover;
+}
+
+#sanji{
+    background-image: url("./img/personagem-sanji.png");
+    background-size: cover;
+}
+
+#zoro{
+    background-image: url("./img/personagem-roronoa-zoro.png");
+    background-size: cover;
+}
+
+.ativo img{
+    box-shadow: 0px 0px 5px 5px white;
+    border-radius: 100px;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav ul{
+    margin-left: 0px;
+}
+
+nav img{
+    border-radius: 100px;
+}
+
+div#logo{
+    background-image: url("./img/one-piece-logo.png"); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 250px;
+}
+
+article{
+    display: inline-block
+}
+
+article{
+    width: 60%;
+    min-width: 450px;
+    max-width: 680px;
+}
+
+nav{
+    width: 20%;
+    min-width: 120px;
+    max-width: 150px;
+    float: right;
+}

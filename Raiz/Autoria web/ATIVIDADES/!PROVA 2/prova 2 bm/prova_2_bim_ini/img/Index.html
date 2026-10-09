@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <a href="Index.html"><img src="logo.png" alt=""></a>
+        <h1>Cadastro de Vacinação</h1>
+
+       <form action="#" method="get"> <table border="1" cellspacing="1" cellpadding="20">
+            <tbody>
+                <tr>
+                    <th>Nome compelto</th>
+                    <th><input type="text" name="Nome" id="Nome" required></th>
+                </tr>
+                <tr>
+                    <th>Idade</th>
+                    <th><input type="number" min="0" max="150" required></th>
+                </tr>
+                <tr>
+                    <th>Cidade</th>
+                    <th><select name="Cidade" id="Cidade">
+                            <option value="Nat">Natal</option>
+                            <option value="SPP">São Paulo do Potengi</option>
+                            <option value="MO">Mossoró</option>
+                        </select></th>
+                </tr>
+                <tr>
+                    <th>Tipo de vacina</th>
+                    <th><input value="1" id="vacina" type="radio">
+                        <label for="1">Coronavac</label>
+                        <br>
+                        <input value="2" id="vacina" type="radio">
+                        <label for="1">AstraZeneca</label>
+                        <br><input value="3" id="vacina" type="radio">
+                        <label for="1">Pfizer</label>
+                        <br>
+                        <input value="4" id="vacina" type="radio">
+                        <label for="1">Janssen</label>
+                    </th>
+                <tr>
+                    <th>Comorbidades</th>
+                    <th><input value="a" type="checkbox">Pressão alta
+                        <br>
+                        <input value="b" type="checkbox">Diabetes
+                        <br>
+                        <input value="c" type="checkbox">Asma
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="submit"><input type="reset"></th>
+                    
+                </tr>
+                    <th colspan="2"><a href="http://rnmaisvacina.lais.ufrn.br/cidadaos/">RN+Vacinas</a></th>
+                </tr>
+
+                </tr>
+            </tbody></form>
+
+        </table>
+
+
+
+    </center>
+
+</body>
+
+</html>
