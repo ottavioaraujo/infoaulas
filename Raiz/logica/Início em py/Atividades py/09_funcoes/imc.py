@@ -16,9 +16,7 @@ def calcular(peso,altura):
                 print("obesidade II (severa)")
     elif imc > 40.0:
         print("obesidade III (morbida)")
-    
-    
-    
+        
     return imc
 
 calcular(peso,altura)
