@@ -1,5 +1,6 @@
 *{
     font-family: "arial";
+    user-select: none;
 }
 
 h1, p{
@@ -11,7 +12,7 @@ body{
 }
 
 nav{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
     width: 150px;
 }
 
@@ -80,4 +81,11 @@ nav{
     min-width: 120px;
     max-width: 150px;
     float: right;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
