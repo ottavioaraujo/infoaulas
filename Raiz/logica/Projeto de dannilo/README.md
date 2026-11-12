@@ -9,5 +9,13 @@
 
 -  ``PYTHON``
 -  ``VS CDDE``
--  ``Principio basico de py``
+-  ``Principios basicos de py``
 
+## Funções de cada membro
+- `` INTERPRETAOR DE CODIGO:`` LUIZ GUSTAVO ROCHA DA MATA
+- `` PROGRAMADOR:`` OTÁVIO MIGUEL FERNANDES DE ARAÚJO
+- `` TESTADOR:`` ARTHUR LEONARDO HOLANDA DE AZEVEDO
+
+## Configuração do Ambiente
+- As maquinas estão com a versão 3.13.1 do python.
+- Todos usarão o interpretaor de codigo VSCODE e o teminal para execução.
