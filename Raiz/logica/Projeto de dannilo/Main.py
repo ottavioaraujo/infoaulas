@@ -1,10 +1,12 @@
-#importando a biblioteca questionary para uar a setas para escoher opcoes no terminal
+# randomizar escolhas
 import random
+#para time sleep
 import time
-
+# importando a biblioteca questionary para usar as setas para escolher opções no terminal
 import questionary
 
-print("\033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██▀▀▀▀\033[0;94;44m▓▒░\033[0;34m█\033[0;37m \033[0;94m▀███\033[0;94;44m▒░ \033[0;34m▀\033[0;37m \033[0;94m▀\033[0;94;44m▒░░\033[0;34m██▀\033[0;37m \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██\033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m▄▄\033[0;37m  \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██▀▀▀▀\033[0;94;44m▓▒░\033[0;34m█\033[0;37m \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██\033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m▄▄\033[0;37m        \033[0;94m▀███\033[0;94;44m▒░ \033[0;34m▀▀▀\033[0;94;44m▒░░\033[0;34m█▄\033[0;37m \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██\033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m▄▄\033[0;37m   \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██▀\033[0;37m \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██\033[0;94m▀\033[0;94;44m█▓▒\033[0;34m█▄▄\033[0;37m \033[0m")
+
+print("\033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██▀▀▀▀\033[0;94;44m▓▒░\033[0;34m█\033[0;37m \033[0;94m▀███\033[0;94;44m▒░ \033[0;34m▀\033[0;37m \033[0;94m▀\033[0;94;44m▒░░\033[0;34m██▀\033[0;37m \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██\033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m▄▄\033[0;37m  \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██▀▀▀▀\033[0;94;44m▓▒░\033[0;34m█\033[0;37m \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██\033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m▄▄\033[0;37m        \033[0;94m▀███\033[0;94;44m▒░ \033[0;34m▀▀▀\033[0;94;44m▒░░\033[0;34m█▄\033[0;37m \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██\033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m▄▄\033[0;37m   \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██▀\033[0;37m \033[0;94m▀\033[0;94;44m█▓▒░\033[0;34m██\033[0;94m▀\033[0;94;44m█▓▒\033[0;34m█▄▄\033[0m")
 print("\033[0;37m \033[0;94;44m▓▒░\033[0;34m███\033[0;37m    \033[0;94;44m▒░░\033[0;34m█\033[0;37m  \033[0;94;44m█▓▒░\033[0;34m██\033[0;37m   \033[0;94;44m▓▒░\033[0;34m██\033[0;37m   \033[0;94;44m▓▒░\033[0;34m███\033[0;37m  \033[0;94m▀\033[0;94;44m▓▒░\033[0;34m██\033[0;37m  \033[0;94;44m▓▒░\033[0;34m███\033[0;37m    \033[0;94;44m▒░░\033[0;34m█\033[0;37m  \033[0;94;44m▓▒░\033[0;34m███\033[0;37m  \033[0;94m▀\033[0;94;44m▓▒░\033[0;34m██\033[0;37m        \033[0;94;44m█▓▒░\033[0;34m██\033[0;37m   \033[0;94;44m▓▒░\033[0;34m██\033[0;37m  \033[0;94;44m▓▒░\033[0;34m███\033[0;37m  \033[0;94m▀\033[0;94;44m▓▒░\033[0;34m██\033[0;37m   \033[0;94;44m▓▒░\033[0;34m███\033[0;37m   \033[0;94;44m▓▒░\033[0;34m███\033[0;37m  \033[0;94m▀\033[0;94;44m▓░\033[0;34m███\033[0m")
 print("\033[0;37m \033[0;94;44m▒░\033[0;34m████\033[0;37m     \033[0;34m▀▀▀\033[0;37m  \033[0;94;44m▓▒░\033[0;34m███\033[0;37m   \033[0;94;44m▒░\033[0;34m███\033[0;37m   \033[0;94;44m▒░\033[0;34m████\033[0;37m   \033[0;94;44m▒░\033[0;34m███\033[0;37m  \033[0;94;44m▒░\033[0;34m████\033[0;37m     \033[0;34m▀▀▀\033[0;37m  \033[0;94;44m▒░\033[0;34m████\033[0;37m   \033[0;94;44m▒░\033[0;34m███\033[0;37m        \033[0;94;44m▓▒░\033[0;34m███\033[0;37m   \033[0;94;44m▒░\033[0;34m███\033[0;37m  \033[0;94;44m▒░\033[0;34m████\033[0;37m   \033[0;94;44m▒░\033[0;34m███\033[0;37m   \033[0;94;44m▒░\033[0;34m████\033[0;37m   \033[0;94;44m▒░\033[0;34m████\033[0;37m   \033[0;94;44m▓▒░\033[0;34m██\033[0m")
 print("\033[0;37m \033[0;94;44m░\033[0;34m█████\033[0;37m          \033[0;34m▀\033[0;94;44m░\033[0;34m████▄▄▄\033[0;94;44m░\033[0;34m████\033[0;37m   \033[0;94;44m░\033[0;34m█████▄▄\033[0;94;44m░\033[0;34m███▀\033[0;37m   \033[0;94;44m░\033[0;34m█████▄▄▄█▄\033[0;37m     \033[0;94;44m░\033[0;34m█████▄▄\033[0;94;44m░\033[0;34m███▀\033[0;37m         \033[0;94;44m▒░\033[0;34m████\033[0;37m \033[0;34m▄▄▄▄▄▄▄\033[0;37m  \033[0;94;44m░\033[0;34m█████▄▄\033[0;94;44m░\033[0;34m███▀\033[0;37m    \033[0;94;44m░\033[0;34m█████\033[0;37m   \033[0;94;44m░\033[0;34m█████\033[0;37m   \033[0;94;44m▓▒░\033[0;34m██\033[0m")
@@ -13,48 +15,64 @@ print("\033[0;37m \033[0;94;44m░\033[0;34m█████\033[0;37m    \033[0;
 print("\033[0;37m \033[0;94;44m░\033[0;34m█████\033[0;37m    \033[0;94;44m▒░\033[0;34m██\033[0;37m  \033[0;34m▀████▄\033[0;37m \033[0;34m▄\033[0;94;44m░\033[0;34m████▀\033[0;37m   \033[0;94;44m░\033[0;34m█████\033[0;37m \033[0;34m▄\033[0;94;44m░\033[0;34m████▀\033[0;37m  \033[0;94;44m░\033[0;34m█████\033[0;37m    \033[0;94;44m▒░\033[0;34m██\033[0;37m  \033[0;94;44m░\033[0;34m█████\033[0;37m   \033[0;94;44m░\033[0;34m████\033[0;37m        \033[0;94;44m░\033[0;34m█████\033[0;37m   \033[0;94;44m░\033[0;34m████\033[0;37m  \033[0;94;44m░\033[0;34m█████\033[0;37m   \033[0;94;44m░\033[0;34m████\033[0;37m   \033[0;94;44m░\033[0;34m█████\033[0;37m   \033[0;94;44m░\033[0;34m█████\033[0;37m \033[0;34m▄\033[0;94;44m░\033[0;34m████▀\033[0m")
 print("\033[0;34m▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\033[0;37m     \033[0;34m▀▀▀▀▀▀▀▀\033[0;37m     \033[0;34m▀▀▀▀▀▀▀▀▀▀▀▀\033[0;37m    \033[0;34m▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\033[0;37m \033[0;34m▀▀▀▀▀▀▀▀\033[0;37m \033[0;34m▀▀▀▀▀▀▀\033[0;37m        \033[0;34m▀▀▀▀▀▀▀▀▀▀▀▀▀\033[0;37m \033[0;34m▀▀▀▀▀▀▀▀\033[0;37m \033[0;34m▀▀▀▀▀▀▀\033[0;37m \033[0;34m▀▀▀▀▀▀▀▀\033[0;37m \033[0;34m▀▀▀▀▀▀▀▀▀▀▀▀\033[0;37m   \033[0m")
 
-#falta desenvonvolver
-def iniciar_jogo(nome):
-    print("iniciano jogo...")
+
+# falta desenvolver
+def iniciar_jogo(nome=None):
+    
     time.sleep(1)
-    # variavel que pede o nome do user
+
     nome = input("Qual é seu nome?")
-    #chamar variaveis da funcao
-    nome,vida,Exp,energia = variaveis_universais(nome)
-    # mostrar stats
-    print(f"\nseu nome é:{nome}\n\nvida:{vida}\nExperiencia:{Exp} \nenergia:{energia}\n")
-    menu_no_jogo()
-    return nome
 
-def explorar():
+    if not nome:
+        return
+
+    nome, vida, Exp, energia = variaveis_universais(nome)
+
+    jogador = {
+        "nome": nome,
+        "vida": vida,
+        "Exp": Exp,
+        "energia": energia,
+        "inventario": []
+    }
+
+    print(f"\nseu nome é: {nome}\n\nvida: {vida}\nExperiencia: {Exp} \nenergia: {energia}\n")
+
+    menu_no_jogo(jogador)
+
+
+def explorar(jogador):
     print("explorando...")
-    time.sleep(1) 
-    achar_itens = random.randint(1,10)
+    time.sleep(1)
 
-    itens = ["Firewall Portátil","Patch de Correção","Chave de Acesso", ]
+    itens = ["Firewall Portátil", "Patch de Correção", "Chave de Acesso"]
+
     item_sorteado = random.choice(itens)
-    inventario.append(item_sorteado)
-    print(f"Voce encontrou um {item_sorteado}!")
-   
-    menu_no_jogo()
+    jogador["inventario"].append(item_sorteado)
 
-# definição das variaveis universais por meio e uma função
+    print(f"Voce encontrou um {item_sorteado}!")
+
+    jogador["Exp"] += 10
+    jogador["energia"] -= 10
+
+    menu_no_jogo(jogador)
+
+
+# definição das variaveis universais por meio de uma função
 def variaveis_universais(nome):
-    #nome do user
-    nome
-    #vida do user
+    # nome do user
+    # vida do user
     vida = 100
-    #experiencia do user
+    # experiencia do user
     Exp = 67
-    #energia do user
+    # energia do user
     energia = 50
 
-    return nome,vida,Exp,energia
+    return nome, vida, Exp, energia
 
 
-# cabecalho de boa vindas
-print("SEJA BEM VINDDO AO CYBER GRID!! \n \n ")
-
+# cabecalho de boas vindas
+print("SEJA BEM VINDO AO CYBER GRID!! \n \n ")
 
 
 # Cria a lista de opções
@@ -64,96 +82,123 @@ opcoes = [
     "Sair"
 ]
 
-#implementar questionary para selecionar as opcoes do menu
-def menu_no_jogo():
-    print("1-Continuar\n2-Inventario\n3-Explorar\n4-Sair")
-    escolha = input("Selecione:")
-    match escolha:
-        case "1":
-            print("\nContinuando o jogo...\n")
-        case "2":
-            inventario()
-        case "3":
-            menu_do_jogo()
-            exit(0)
-        case "4":
-            print("Saindo do jogo...")
-            exit(0)
-        case _:
-            print("escolha 1,2 ou 3")
+
+# implementar questionary para selecionar as opcoes do menu
+def menu_no_jogo(jogador):
+
+    while True:
+        print("1-Continuar\n2-Inventario\n3-Explorar\n4-Sair")
+
+        opcoes_m = [
+            "Continuar",
+            "Inventario",
+            "Explorar",
+            "Sair"
+        ]
+
+        escolha = questionary.select(
+            "Use as setas para escolher uma opção e aperte Enter:",
+            choices=opcoes_m
+        ).ask()
+
+        if escolha is None or escolha == "Sair":
+            return
+
+        elif escolha == "Continuar":
+            mostrar_status(jogador)
+
+        elif escolha == "Inventario":
+            inventario(jogador)
+
+        elif escolha == "Explorar":
+            jogador["energia"] -= 0
+            explorar(jogador)
 
 
-def inventario():
-    inventario = []
-    print(f"Seus intens sao: {inventario}")
-    return menu_no_jogo()
+def inventario(jogador):
+    print("\nSeus itens são:")
 
-      
+    if jogador["inventario"]:
+        for item in jogador["inventario"]:
+            print(f"- {item}")
+    else:
+        print("Seu inventário está vazio.")
+
+    return
+
+
+def mostrar_status(jogador):
+    print(f"\nseu nome é: {jogador['nome']}")
+    print(f"vida: {jogador['vida']}")
+    print(f"Experiencia: {jogador['Exp']}")
+    print(f"energia: {jogador['energia']}\n")
+
+
 def game_over():
-     print("O jogo terminou")
-     print(" obrigado por jogar")
-     ques = input("quer jogar novamente? sim/nao:")
-     match ques:
-        case "sim":
-                 return iniciar_jogo()
-        case "nao":
-              return menu_do_jogo()
-        case _:     
-                exit(0)
+    print("O jogo terminou")
+    print("Obrigado por jogar")
 
-#falta desenvonvolver
+    ques = questionary.select(
+        "Quer jogar novamente?",
+        choices=["sim", "nao"]
+    ).ask()
+
+    if ques == "sim":
+        return iniciar_jogo()
+    else:
+        return menu_do_jogo()
+
+
+# falta desenvolver
 def ver_instruncoes():
     print('intruções...')
+    questionary.press_any_key_to_continue().ask()
+
 
 # selecao com setas
 def menu_do_jogo():
-    # Cria a lista de opções
-    opcoes = [
-        "Iniciar novo jogo",
-        "ver instrucoes",
-        "Sair"
-    ]
 
-    # Exibe o menu e aguarda a escolha do usuário
-    escoha = questionary.select(
-        "Use as setas para escolher uma opção e aperte Enter:",
-        choices=opcoes
-    ).ask()
+    while True:
 
-    # Mostra o que o usuario escolheu
-    print(f"\nVocê selecionou: {escoha}")
-    # mostra as instrucoes do jogo
-    if escoha == "ver instrucoes":
-        ver_instruncoes()
-    # inicia o jogo
-    elif escoha == "Iniciar novo jogo":
-        iniciar_jogo(nome)
-    # sai do jogo
-    elif escoha == "Sair":
-        print("Encerrando o programa...")
-        exit(0)
+        # Cria a lista de opções
+        opcoes = [
+            "Iniciar novo jogo",
+            "ver instrucoes",
+            "Sair"
+        ]
 
-    elif escoha == "Sair":
-        print("Encerrando o programa...")
-        exit(0)
-escolha = questionary.select(
-    "Use as setas para escolher uma opção e aperte Enter:",
-    choices=opcoes
-).ask()
+        # Exibe o menu e aguarda a escolha do usuário
+        escolha = questionary.select(
+            "Use as setas para escolher uma opção e aperte Enter:",
+            choices=opcoes
+        ).ask()
 
-# Mostra o que o usuario escolheu
-print(f"\nVocê selecionou: {escolha}")
+        if escolha is None:
+            break
 
-if escolha == "ver instrucoes":
-    ver_instruncoes()
+        # mostra as instrucoes do jogo
+        if escolha == "ver instrucoes":
+            ver_instruncoes()
 
-elif escolha == "Iniciar novo jogo":
-    iniciar_jogo(None)
+        # inicia o jogo
+        elif escolha == "Iniciar novo jogo":
+         print("\nIniciando jogo", end="", flush=True)
+         for _ in range(3):
+          time.sleep(0.4)
+          print(".", end="", flush=True)   
+          print()
+         iniciar_jogo()
 
-
-elif escolha == "Sair":
-    print("Encerrando o programa...")
-    exit(0)
+        # sai do jogo com animacao dos pontos
+        elif escolha == "Sair":
+                    print("Encerrando Cyber Grid", end="", flush=True)
+                    for _ in range(3):
+                        time.sleep(0.4)
+                        print(".", end="", flush=True)
+                        
+                    
+                    break
+        
 
 
-
+menu_do_jogo()
